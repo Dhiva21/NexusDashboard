@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PCR List</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/c0b59d350f.js" crossorigin="anonymous"></script>
+    <!--Style Sheets-->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/icomoon/styles.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.dataTables.css" />
+    <!-- <link rel="stylesheet" href="assets/css/select2.min.css" /> -->
+    <link rel="stylesheet" href="assets/css/bootstrap-clockpicker.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="page-content">
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar_bg sidebar-main sidebar-expand-lg">
+            <!-- Sidebar content -->
+            <div class="sidebar-content">
+                <!-- User menu -->
+                <div class="sidebar-section sidebar-user my-1 ml-2">
+                    <div class="sidebar-section-body">
+                        <div class="media align-items-center">
+                            <a href="#" class="logo_img_cont">
+                                <img src="assets/images/nexxulogo.png" class="img-fluid rounded-circle" alt="" />
+                            </a>
+                            <div class="media-body">
+                                <div class="app_title">Nexxus Portal Plus</div>
+                            </div>
+                            <div class="ml-3 align-self-start">
+                                <button type="button"
+                                    class="btn btn-outline-light-100 text-white border-transparent btn-icon rounded-pill btn-sm sidebar-control sidebar-main-resize d-none d-lg-inline-flex">
+                                    <i class="icon-transmission"></i>
+                                </button>
+                                <button type="button"
+                                    class="btn btn-outline-light-100 text-white border-transparent btn-icon rounded-pill btn-sm sidebar-mobile-main-toggle d-lg-none">
+                                    <i class="icon-cross2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /user menu -->
+                <!-- Main navigation -->
+                <div class="sidebar-section">
+                    <ul class="nav nav-sidebar" data-nav-type="accordion">
+                        <!-- Main -->
+                        <li class="nav-item-header">
+                            <div class="add_info"></div>
+                            <i class="icon-menu" title="Main"></i>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="inbox.html" class="nav-link"><i class="fa-solid fa-inbox"></i>
+                                <span>Inbox</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="nsrList.html" class="nav-link"><i class="icon-home4"></i> <span>New Store
+                                    Request</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="pcrList.html" class="nav-link">
+                                <i class="icon-home4"></i> <span>
+                                    Price Change Request
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="newsannouncement.html" class="nav-link">
+                                <i class="icon-home4"></i>
+                                <span>
+                                    News &amp; Announcement
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="lastposteddates.html" class="nav-link"><i class="icon-home4"></i> <span>Last Post
+                                    Dates</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="pricebookupload.html" class="nav-link"><i class="icon-home4"></i> <span>Upload
+                                    PriceBook</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="zendesk.html" class="nav-link"><i class="icon-home4"></i> <span> ZenDesk/Support
+                                </span></a>
+                        </li>
+                        <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link"><i class="icon-copy"></i> <span>Reports</span></a>
+
+                            <ul class="nav nav-group-sub" data-submenu-title="Layouts">
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link active">Check
+                                        History</a></li>
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link">Check Report_SBI</a>
+                                </li>
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link">Check Summary</a></li>
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link">Check Summary For
+                                        Single Retailer</a></li>
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link">Driver Shrink
+                                        Adjustment</a></li>
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link">Inventory On Hand</a>
+                                </li>
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link">Merchandiser Sales
+                                        Report</a></li>
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link">Product List</a></li>
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link">Remittance Detail By
+                                        Check Number</a></li>
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link">Retail Store List</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- /page kits -->
+                    </ul>
+                </div>
+                <!-- /main navigation -->
+            </div>
+            <!-- /sidebar content -->
+        </div>
+        <!-- /main sidebar -->
+        <!-- Main content -->
+        <div class="content-wrapper">
+            <!-- Inner content -->
+            <div class="content-inner">
+                <!-- Page header -->
+                <div class="page-header page-header-light d-flex align-items-baseline justify-content-between">
+                    <div class="breadcrumb-line breadcrumb-line-light header-elements-lg-inline">
+                        <div class="d-flex">
+                            <div class="breadcrumb">
+                                <a href="user.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+                                <span class="breadcrumb-item active">Price change request</span>
+                            </div>
+
+                            <a href="#" class="header-elements-toggle text-body d-lg-none"><i class="icon-more"></i></a>
+                        </div>
+                    </div>
+                    <div class="page-header-content header-elements-lg-inline">
+                        <div class="header-elements d-none">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="dropdown">
+                                    <a href="#" class="btn btn-link btn-float text-body text-decoration-none"
+                                        id="notificationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="position-relative notificationBtn">
+                                            <i class="fas fa-bell mr-3"></i>
+                                            <span class="round_alert"></span>
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdownWidth" aria-labelledby="notificationDropdown">
+                                        <li class="px-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="mb-0">Notifications</p>
+                                                <div>
+                                                    <a href="#" class="btn btn-sm btn-link">View All</a>
+                                                    <a href="#" class="btn btn-sm btn-link">Dismiss All</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="ms-3 me-auto d-flex justify-content-between align-items-start">
+                                                <p class="notificationPara">Automatically accepted 39 steps similar to
+                                                    step 1/4 of 'Test primary page' <span class="text-primary">see
+                                                        details</span></p>
+                                                <div><i class="fa fa-times paddingRight" aria-hidden="true"></i></div>
+                                            </div>
+                                            <div class="text-end">
+                                                <p class="mb-0 paddingRight">an hour ago</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="ms-3 me-auto d-flex justify-content-between align-items-start">
+                                                <p class="notificationPara">Automatically accepted 39 steps similar to
+                                                    step 1/4 of 'Test primary page' <span class="text-primary">see
+                                                        details</span></p>
+                                                <div><i class="fa fa-times paddingRight" aria-hidden="true"></i></div>
+                                            </div>
+                                            <div class="text-end">
+                                                <p class="mb-0 paddingRight">an hour ago</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="ms-3 me-auto d-flex justify-content-between align-items-start">
+                                                <p class="notificationPara">Automatically accepted 39 steps similar to
+                                                    step 1/4 of 'Test primary page' <span class="text-primary">see
+                                                        details</span></p>
+                                                <div><i class="fa fa-times paddingRight" aria-hidden="true"></i></div>
+                                            </div>
+                                            <div class="text-end">
+                                                <p class="mb-0 paddingRight">an hour ago</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn btn-link btn-float text-body text-decoration-none">
+                                    <span>
+                                        <i class="fa fa-question-circle-o mr-3" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+
+                                <div class="dropdown top_drop">
+                                    <a href="#" class="btn btn-link btn-float text-body dropdown-toggle">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0">
+                                                <div class="thum_img">
+                                                    <img class="img-fluid" src="assets/images/nouser.jpg" />
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ml-2">
+                                                <div class="admin_info text-left">
+                                                    <p>Admin</p>
+                                                    <h6>DK</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li>
+                                            <div class="dropdown-item d-flex align-items-center">
+                                                <div class="flex-shrink-0">
+                                                    <div class="thum_img">
+                                                        <img class="img-fluid" src="assets/images/nouser.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ml-2">
+                                                    <div class="admin_info text-left">
+                                                        <h6>DK</h6>
+                                                        <p>form1224@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"><span><i
+                                                        class="icon-user mr-2"></i></span>Profile</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"><span><i
+                                                        class="icon-cog3 mr-2"></i></span>Settings</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"><span><i
+                                                        class="icon-compass4 mr-2"></i></span>Activity Log</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="./loginpage.html">
+                                                <span>
+                                                    <i class="icon-switch mr-2"></i>
+                                                </span>Logout
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /page header -->
+                <!-- Content area -->
+                <div class="content bg-white dashboard_parent">
+                    <div class="row row-xs">
+                        <div class="col-md-12">
+                            <div class="title_page">
+                                <h3>Price Change Request</h3>
+                                <p>Price change request for the existing product</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Main Table -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div>
+                                <div class="container-fluid mt-4">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="steps">
+                                            <progress id="progress" value="0" max="100"></progress>
+                                            <div class="step-item">
+                                                <button class="step-button text-center" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    1
+                                                </button>
+                                                <div class="step-title">Select Product</div>
+                                            </div>
+                                            <div class="step-item">
+                                                <button class="step-button text-center collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    2
+                                                </button>
+                                                <div class="step-title">Store Selection</div>
+                                            </div>
+                                            <div class="step-item">
+                                                <button class="step-button text-center collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                    3
+                                                </button>
+                                                <div class="step-title">Price change(s)</div>
+                                            </div>
+                                            <div class="step-item">
+                                                <button class="step-button text-center collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                    aria-expanded="false" aria-controls="collapseFour">
+                                                    4
+                                                </button>
+                                                <div class="step-title">Review Request</div>
+                                            </div>
+                                            <div class="step-item">
+                                                <button class="step-button text-center collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                    aria-expanded="false" aria-controls="collapseFive">
+                                                    5
+                                                </button>
+                                                <div class="step-title">Process Request</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Select / Add Product -->
+                                        <div class="card1">
+                                            <div id="collapseOne" class="collapse show"
+                                                data-bs-parent="#accordionExample">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="titleBg">
+                                                            <p class="mb-0">Select Product</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <div>
+                                                                <label for="state" class="ms-1">Select Product</label>
+                                                                <select class="form-select" id="nsrSelect"
+                                                                    multiple="multiple">
+                                                                    <option value="Create">VM horizon</option>
+                                                                    <option value="Update">Checkpoint</option>
+                                                                    <option value="Edit">
+                                                                        Half Dozen Plus FF
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="btnNext justify-content-end">
+                                                            <button class="btn  next" data-next="collapseTwo">Next
+                                                                &gt;</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Select / Add Product -->
+                                        <!-- Store Selection -->
+                                        <div class="card2">
+                                            <div id="collapseTwo" class="collapse" data-bs-parent="#accordionExample">
+                                                <div class="row mb-2">
+                                                    <div class="col-md-12">
+                                                        <div class="titleBg d-flex justify-content-between">
+                                                            <p class="mb-0">Store Selection</p>
+                                                            <p class="mb-0">Step 2 of 5</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h6>
+                                                    Half Dozen Plus FF
+                                                </h6>
+                                                <div class="row mb-5">
+                                                    <div class="col-md-3">
+                                                        <div>
+                                                            <label for="state" multiple="multiple"
+                                                                class="ms-1">State</label>
+                                                            <select class="form-select" id="state">
+                                                                <option value="Create">All</option>
+                                                                <option value="Create">Create</option>
+                                                                <option value="Update">Update</option>
+                                                                <option value="Edit">Edit</option>
+                                                                <option value="Delete">Delete</option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div>
+                                                            <label for="city" class="ms-1">City</label>
+                                                            <select class="form-select" id="city">
+                                                                <option value="Create">All</option>
+                                                                <option value="Create">Create</option>
+                                                                <option value="Update">Update</option>
+                                                                <option value="Edit">Edit</option>
+                                                                <option value="Delete">Delete</option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div>
+                                                            <label for="zipCode" class="ms-1">Zip Code</label>
+                                                            <select class="form-select" id="zipCode">
+                                                                <option value="Create">All</option>
+                                                                <option value="Create">Create</option>
+                                                                <option value="Update">Update</option>
+                                                                <option value="Edit">Edit</option>
+                                                                <option value="Delete">Delete</option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div>
+                                                            <label for="storeList" class="ms-1">Store#</label>
+                                                            <select class="form-select" id="storeList">
+                                                                <option value="Create">All</option>
+                                                                <option value="Create">Create</option>
+                                                                <option value="Update">Update</option>
+                                                                <option value="Edit">Edit</option>
+                                                                <option value="Delete">Delete</option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row ">
+                                                    <div class="col-md-5">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="yes1">
+                                                                <label class="form-check-label ms-1" for="yes1">
+                                                                    All Available Stores
+                                                                </label>
+                                                            </div>
+                                                            <p class="mb-0">Available Count: 1</p>
+                                                        </div>
+                                                        <div>
+                                                            <div class="table-responsive">
+
+                                                                <table id="StoreTable"
+                                                                    class="table table-hover border ">
+                                                                    <thead>
+                                                                        <tr>
+
+                                                                            <th></th>
+                                                                            <th>Retailer</th>
+                                                                            <th>Store#</th>
+                                                                            <th>Store Location</th>
+                                                                            <th>Zip</th>
+
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Data Empty</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="addSidebtn2 mb-3 ">
+                                                            <!-- <a href="#">Add &gt;</a> -->
+                                                            <p>Add</p>
+                                                        </div>
+                                                        <div class="addSidebtn2 mb-3  ">
+                                                            <!-- <a href="#">&lt; Remove </a> -->
+                                                            <p>Remove</p>
+                                                        </div>
+                                                        <div class="addSidebtn2 mb-3 ">
+                                                            <p>Reset</p>
+                                                        </div>
+                                                        <!-- <div class="addSidebtn2 mb-3  ">
+
+                                                            <p><span><i
+                                                                        class="fa-solid fa-file-export mr-2"></i></span>Export
+                                                                To Excel</p>
+                                                        </div> -->
+
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <div class="d-flex justify-content-between">
+                                                            <div class="form-check d-flex align-items-center">
+                                                                <input class="form-check-input" type="checkbox" value=""
+                                                                    id="yes1">
+                                                                <label class="form-check-label ms-1" for="yes1">
+                                                                    All Selected Stores
+                                                                </label>
+                                                            </div>
+
+                                                            <p class="mb-0">Selected Count: 1</p>
+                                                        </div>
+                                                        <div>
+                                                            <div class="table-responsive">
+                                                                <!--<table id="selectCountTable" class="table table-hover border ">-->
+                                                                <table id="StoreCountTable"
+                                                                    class="table table-hover border ">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th></th>
+                                                                            <th>Retailer</th>
+                                                                            <th>Store#</th>
+                                                                            <th>Store Location</th>
+                                                                            <th>Zip</th>
+
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Data Empty</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="btnNext">
+                                                            <button class="btn btn-primary previous"
+                                                                data-previous="collapseOne"> &lt; Prev </button>
+                                                            <button class="btn btn-primary next"
+                                                                data-next="collapseThree">Next &gt;</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Store Selection -->
+                                        <!-- Effective Date -->
+                                        <div class="card3">
+                                            <div id="collapseThree" class="collapse" data-bs-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <div class="row mb-2">
+                                                        <div class="col-md-12">
+                                                            <div class="titleBg d-flex justify-content-between">
+                                                                <p class="mb-0">Price change(s)</p>
+                                                                <p class="mb-0">step 3 of 5</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="borderOutside">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <div>
+                                                                    <h6>
+                                                                        Half Dozen Plus FF
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-7">
+                                                                <div class="reset mb-3 ">
+                                                                    <!-- <a href="#">Add &gt;</a> -->
+                                                                    <p>Reset All</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div>
+                                                            <p>
+                                                                Select dates for price change
+                                                            </p>
+                                                        </div>
+                                                        <div class="row mb-3">
+
+                                                            <div class="col-md-3">
+                                                                <label for="effectiveDate" class="form-label">Select
+                                                                    Date</label>
+                                                                <input ype="text" id="effectiveDate"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <label for="effectiveDate" class="form-label">End
+                                                                    Date</label>
+                                                                <input ype="text" id="effectiveDate1"
+                                                                    class="form-control">
+                                                            </div>
+
+
+
+                                                            <div
+                                                                class="col-md-3 d-flex justify-content-center align-items-end">
+                                                                <div>
+                                                                    <div class="addSidebtn1  ">
+                                                                        <a href="#">Apply Dates</a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-12">
+                                                                <div
+                                                                    class="col-md-2 d-flex justify-content-start align-items-end">
+                                                                    <div>
+                                                                        <div
+                                                                            class="form-check d-flex align-items-center">
+                                                                            <input class="form-check-input"
+                                                                                type="checkbox" value="" id="yes1">
+                                                                            <label class="form-check-label ms-1"
+                                                                                for="yes1">
+                                                                                is this a promotion
+                                                                            </label>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row mb-3">
+                                                            <div class="col-md-3">
+                                                                <div>
+                                                                    <label for="state" class=" ms-1">Retail :</label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="" />
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div>
+                                                                    <label for="state" class=" ms-1">Cost :</label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="" />
+                                                                </div>
+                                                            </div>
+                                                            <div
+                                                                class="col-md-3 d-flex justify-content-center align-items-end">
+                                                                <div>
+                                                                    <div class="addSidebtn1  ">
+                                                                        <a href="#">Apply Price</a>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3 ">
+                                                        <div class="col-md-12">
+                                                            <!--<div class="d-flex justify-content-between align-items-center">
+                                                                <div class="form-check d-flex align-items-center mb-0">
+                                                                    <input class="form-check-input" type="checkbox" id="selectAll" />
+                                                                    <label class="form-check-label mb-0 ms-2" for="selectAll">Select All</label>
+                                                                </div>
+                                                                <p class="mb-0">Store Count: 1</p>
+                                                               
+                                                            </div>-->
+                                                            <div>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <div
+                                                                        class="form-check d-flex align-items-center mb-0">
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            id="selectAll" />
+                                                                        <label class="form-check-label mb-0 ms-2"
+                                                                            for="selectAll">Select All</label>
+                                                                    </div>
+                                                                    <p class="mb-0">Store Count: 1</p>
+
+                                                                </div>
+                                                                <div class="table-responsive">
+                                                                    <table id="PriceTable"
+                                                                        class="table table-hover border ">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th></th>
+                                                                                <th>Description</th>
+                                                                                <th>Old Retail</th>
+                                                                                <th>Old Cost</th>
+                                                                                <th>Old Margin</th>
+                                                                                <th>New Retail</th>
+                                                                                <th>New Cost</th>
+                                                                                <th>New</th>
+                                                                                <th>Start date</th>
+                                                                                <th>Promotion</th>
+                                                                                <th>End date</th>
+
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Data Empty</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="btnNext">
+                                                        <button class="btn btn-primary previous"
+                                                            data-previous="collapseTwo">&lt; Prev </button>
+                                                        <button class="btn btn-primary next"
+                                                            data-next="collapseFour">Next &gt;</button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Effective Date -->
+                                        <!-- Review Request -->
+                                        <div class="card4">
+                                            <div id="collapseFour" class="collapse" data-bs-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <div class="row mb-2">
+                                                        <div class="col-md-12">
+                                                            <div class="titleBg d-flex justify-content-between">
+                                                                <p class="mb-0">Review Request</p>
+                                                                <p class="mb-0">step 4 of 5</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h6>Request summary</h6>
+
+                                                    <div class="row ">
+                                                        <div class="col-md-3">
+                                                            <div>
+                                                                <label for="state" class="ms-1">Product : </label>
+                                                                <span>
+                                                                    <strong> Atlanta FFL </strong>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-3">
+                                                            <div>
+                                                                <label for="state" class="ms-1">Vendor : </label>
+                                                                <span>
+                                                                    <strong> Half Dozen Plus FFL </strong>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="row ">
+                                                        <div class="col-md-12">
+
+                                                            <div>
+                                                                <div class="table-responsive">
+                                                                    <table id="RequestTable"
+                                                                        class="table table-hover border ">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Store Description</th>
+                                                                                <th>Old Retail</th>
+                                                                                <th>Old Cost</th>
+                                                                                <th>Old Margin</th>
+                                                                                <th>New Retail</th>
+                                                                                <th>New Cost</th>
+                                                                                <th>New</th>
+                                                                                <th>Start date</th>
+                                                                                <th>Promotion</th>
+                                                                                <th>End date</th>
+
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>Data Empty</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <p class="mb-0">Store Count: 1</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+
+                                                    </div>
+
+                                                    <div class="btnNext">
+                                                        <button class="btn btn-primary previous"
+                                                            data-previous="collapseThree">&lt; Prev </button>
+                                                        <button class="btn btn-primary next"
+                                                            data-next="collapseFive">Next &gt;</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- Review Request -->
+                                        <!-- Process Request -->
+                                        <div class="card5">
+                                            <div id="collapseFive" class="collapse" data-bs-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <div class="row mb-2">
+                                                        <div class="col-md-12">
+                                                            <div class="titleBg d-flex justify-content-between">
+                                                                <p class="mb-0">Process Request</p>
+                                                                <p class="mb-0">step 5 of 5</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <label>Comments</label>
+                                                        <textarea cols="12"
+                                                            rows="12">Testing Comments............</textarea>
+                                                    </div>
+                                                    <!--<p>Testing Comments............</p>-->
+                                                    <div class="btnNext">
+                                                        <button class="btn btn-primary previous"
+                                                            data-previous="collapseFour">&lt; Prev </button>
+                                                        <button class="btn btn-success finish">Save </button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Process Request -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- /main Table -->
+                    <!-- /main Table -->
+                </div>
+                <!-- /content area -->
+                <!-- Footer -->
+                <div class="navbar navbar-expand-lg navbar-light border-bottom-0 border-top">
+                    <div class="text-center d-lg-none w-100">
+                        <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
+                            data-target="#navbar-footer">
+                            <i class="icon-unfold mr-2"></i>
+                            Footer
+                        </button>
+                    </div>
+
+                    <div class="navbar-collapse collapse" id="navbar-footer">
+                        <span class="navbar-text">
+                            Copyright &copy; 2024 Nexxus Group&reg;. All Rights Reserved
+
+                        </span>
+
+                        <!-- <ul class="navbar-nav ml-lg-auto">
+                                        <li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
+                                        <li class="nav-item"><a href="https://demo.interface.club/limitless/docs/" class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a></li>
+                                        <li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+                                    </ul> -->
+                    </div>
+                </div>
+                <!-- /footer -->
+            </div>
+            <!-- /inner content -->
+        </div>
+        <!-- /main content -->
+        <!-- Sidepanel content-->
+        <div id="modal_popup" class="modal fade modal-right modal_classes" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog modal_store modal-dialog-slideout">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="mb-0">Attendence Status</h6>
+                        <div>
+                            <!-- <span class="fa_expand" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Expand Screen"><i class="fa-light fa-expand"></i></span> -->
+                            <button type="button" id="closeBox" class="close" data-bs-dismiss="modal">
+                                &times;
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Form -->
+                        <form autocomplete="off">
+                            <div>
+                                <div class="row mb-3 g-3 align-items-center">
+                                    <div class="col-4">
+                                        <label for="firstName" class="col-form-label"></label>
+                                        Name :</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" id="firstName" class="form-control" />
+                                    </div>
+                                </div>
+
+
+                                <div class="row mb-3 g-3 align-items-center">
+                                    <div class="col-4">
+                                        <label for="email1" class="col-form-label">Email :</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="email" id="email1" class="form-control" />
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3 g-3 align-items-center">
+                                    <label class="custom-control custom-switch custom-control-right">
+                                        <input type="checkbox" class="custom-control-input" checked />
+                                        <span class="custom-control-label">Active :</span>
+                                    </label>
+
+                                </div>
+
+
+
+                                <div class="row mb-3 g-3 align-items-center">
+                                    <div class="col-4">
+                                        <label for="effectFrom" class="col-form-label">Effective Form :</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" id="effectFrom" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row mb-3 g-3 align-items-center">
+                                    <div class="col-4">
+                                        <label for="effectTo" class="col-form-label">Effective To :</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" id="effectTo" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row mb-3 g-3 align-items-center">
+                                    <div class="col-4">
+                                        <label for="role" class="col-form-label">Assign Role :</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" id="role" class="form-control" />
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </form>
+                        <!-- Form -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="reset" class="btn btn-white closeBoxDialog" id="closeBoxDialog">
+                            Cancel
+                        </button>
+                        <button type="submit" class="btn btn-primary ml-2 " id="sweet_success">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Sidepanel content-->
+    </div>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap_multiselect.js"></script>
+    <script src="assets/js/form_multiselect.js"></script>
+    <script src="assets/js/datatables.min.js"></script>
+    <script src="assets/js/datatables_advanced.js"></script>
+    <script src="https://cdn.datatables.net/fixedcolumns/4.1.0/js/dataTables.fixedColumns.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.js"></script>
+    <script src="assets/js/pickadate/picker.js"></script>
+    <script src="assets/js/pickadate/picker.date.js"></script>
+    <script src="assets/js/new.js"></script>
+    <!-- <script src="assets/js/customertable.js"></script> -->
+
+    <script src="assets/js/bootstrap-clockpicker.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            function updateProgressBar() {
+                const stepButtons = document.querySelectorAll('.step-button');
+                const progress = document.querySelector('#progress');
+                let currentIndex = -1;
+
+                stepButtons.forEach((button, index) => {
+                    if (!button.classList.contains('collapsed')) {
+                        currentIndex = index;
+                    }
+                });
+
+                if (currentIndex !== -1) {
+                    const progressValue = (currentIndex * 100) / (stepButtons.length - 1);
+                    progress.setAttribute('value', progressValue);
+
+                    stepButtons.forEach((item, secindex) => {
+                        if (currentIndex >= secindex) {
+                            item.classList.add('done');
+                        } else {
+                            item.classList.remove('done');
+                        }
+                    });
+                }
+            }
+
+
+            $('.next').click(function () {
+                var nextId = $(this).data('next');
+                $('.collapse').collapse('hide');
+                $('#' + nextId).collapse('show');
+            });
+
+            $('.previous').click(function () {
+                var previousId = $(this).data('previous');
+                $('.collapse').collapse('hide');
+                $('#' + previousId).collapse('show');
+            });
+
+            $('.steps .step-button').on('click', function () {
+                updateProgressBar();
+            });
+
+            $('.collapse').on('shown.bs.collapse', function () {
+                updateProgressBar();
+            });
+            $('#nsrSelect').multiselect(
+                {
+                    enableFiltering: true,
+                    enableCaseInsensitiveFiltering: true,
+                    buttonWidth: '100%',
+                    buttonClass: "custom-select custom1",
+                }
+            );
+            $('#state').multiselect(
+                {
+                    enableFiltering: true,
+                    enableCaseInsensitiveFiltering: true,
+                    buttonWidth: '100%',
+                    buttonClass: "custom-select custom1",
+                }
+            );
+            $('#city').multiselect(
+                {
+                    enableFiltering: true,
+                    enableCaseInsensitiveFiltering: true,
+                    buttonWidth: '100%',
+                    buttonClass: "custom-select custom1",
+                }
+            );
+            $('#zipCode').multiselect(
+                {
+                    enableFiltering: true,
+                    enableCaseInsensitiveFiltering: true,
+                    buttonWidth: '100%',
+                    buttonClass: "custom-select custom1",
+                }
+            );
+            $('#storeList').multiselect(
+                {
+                    enableFiltering: true,
+                    enableCaseInsensitiveFiltering: true,
+                    buttonWidth: '100%',
+                    buttonClass: "custom-select custom1",
+                }
+            );
+
+            $("#screenSelect").multiselect({
+
+                enableFiltering: true,
+                enableCaseInsensitiveFiltering: true,
+                buttonWidth: '100%',
+                buttonClass: "custom-select custom1",
+
+            });
+            $('.multiselect').click(function () {
+                $('.multiselect-container').slideUp(600);
+                if (!$(this).next('.multiselect-container').is(':visible')) {
+                    $(this).next('.multiselect-container').slideDown(100);
+                } else {
+                    $(this).next('.multiselect-container').slideUp(100);
+                }
+                console.log('wolimg')
+            });
+            $("#effectiveDate").datepicker({
+                dateFormat: "dd-mm-yy",
+            });
+            $("#effectiveDate1").datepicker({
+                dateFormat: "dd-mm-yy",
+            });
+        });
+    </script>
+</body>
+
+</html>

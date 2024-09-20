@@ -1,0 +1,19 @@
+Retailer
+Created By
+Requested Effective
+Product
+Status
+Action
+
+
+
+
+.declare-count p#resultDeclared {
+    position: absolute;
+    top: 40%;
+    left: 42%;
+}
+
+.tfi-lr .leadingandtrailing .col1 .declare-count p:last-child {
+    font-size: 2em;
+}

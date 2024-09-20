@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Register Page</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--Style Sheets-->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/icomoon/styles.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Content Here -->
+                    <div class="row">
+                        <div class="col-xl-8 col-md-6 px-0">
+                            <div>
+                                <div class="position-relative">
+                                    <img src="assets/images/side_image.png" class="img-fluid imgHeight" alt="" />
+                                </div>
+                                <div class="">
+                                    <img src="assets/images/NexxusLogo.svg" class="img-fluid login_left_logo" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                            <div>
+                                <div class="row loginpos">
+                                    <div class="col-md-12">
+                                        <div>
+                                            <div class="">
+                                                <div class="">
+                                                    <h3>
+                                                        <span class="">
+                                                            <img src="assets/images/nexxulogo.png" class="img-fluid logoSideImg" alt=""
+                                                                 srcset="" />
+                                                        </span>
+                                                        Register
+                                                    </h3>
+                                                </div>
+                                                <form action="" class="loginForm">
+                                                    <div class="mb-4">
+                                                        <label for="name" class="form-label">Full Name</label>
+                                                        <input type="text" class="form-control formModify" id="name" placeholder="Full Name" />
+                                                    </div>
+                                                    <div class="mb-4">
+                                                        <label for="email" class="form-label">Email address</label>
+                                                        <input type="email" class="form-control formModify" id="email" placeholder="Email" />
+                                                    </div>
+                                                    <div class="mb-4">
+                                                        <div>
+                                                            <label for="password" class="form-label">Password</label>
+                                                        </div>
+                                                        <div class="input-group">
+                                                            <input type="password" id="passwordInput" class="form-control formModify"
+                                                                   placeholder="Enter Password" />
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text borderNone">
+                                                                    <i id="togglePassword" class="fa fa-eye-slash"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-4">
+                                                        <div>
+                                                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                                        </div>
+                                                        <div class="input-group">
+                                                            <input type="password" id="confirmPasswordInput" class="form-control formModify"
+                                                                   placeholder="Confirm Password" />
+                                                            <div class="input-group-append">
+                                                                <span class="input-group-text borderNone">
+                                                                    <i id="toggleConfirmPassword" class="fa fa-eye-slash"></i>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3 text-end">
+                                                        <button type="submit" class="btn btn-primary btnBg">
+                                                            Register
+                                                        </button>
+                                                    </div>
+                                                    <div class="register1">
+                                                        <p>
+                                                            <a href="loginpage.html">Already have an account? Log In</a>
+                                                        </p>
+                                                    </div>
+                                                </form>
+                                                <!-- Or -->
+                                                <div class="d-flex justify-content-center align-items-center mb-3">
+                                                    <div class="orCenter1">
+                                                        <p>OR</p>
+                                                    </div>
+                                                </div>
+                                                <!-- Or -->
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <form action="">
+                                                        <div class="mb-3">
+                                                            <h3>Nexxus AD Login</h3>
+                                                        </div>
+                                                        <div class="mb-3 text-center">
+                                                            <button type="submit" class="btn btn-primary btnBg">
+                                                                Microsoft
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content Here -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#togglePassword").on("click", function () {
+                var passwordField = $("#passwordInput");
+                var fieldType = passwordField.attr("type");
+
+                // Toggle password visibility
+                if (fieldType === "password") {
+                    passwordField.attr("type", "text");
+                    $(this).removeClass("fa-eye-slash").addClass("fa-eye");
+                } else {
+                    passwordField.attr("type", "password");
+                    $(this).removeClass("fa-eye").addClass("fa-eye-slash");
+                }
+            });
+
+            $("#toggleConfirmPassword").on("click", function () {
+                var passwordField = $("#confirmPasswordInput");
+                var fieldType = passwordField.attr("type");
+
+                // Toggle password visibility
+                if (fieldType === "password") {
+                    passwordField.attr("type", "text");
+                    $(this).removeClass("fa-eye-slash").addClass("fa-eye");
+                } else {
+                    passwordField.attr("type", "password");
+                    $(this).removeClass("fa-eye").addClass("fa-eye-slash");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

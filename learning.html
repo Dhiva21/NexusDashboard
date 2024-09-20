@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        .flex {
+            display: flex;
+            justify-content: space-around;
+            align-items: baseline;
+        }
+
+        .borderFlex {
+            border: 1px solid red;
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            border-radius: 20px;
+        }
+
+        #element {
+            position: absolute;
+            top: 4px;
+            left: 50%;
+        }
+    </style>
+</head>
+
+<body class="element1" id="">
+    <div>
+        <p id="element"></p>
+    </div>
+    <div>
+        <ul class="main" id="main">
+
+
+        </ul>
+        <select name="" id="selectMenu"></select>
+
+        <ul style="width: 10%;">
+            <li class="flex">
+                <div>
+                    Cake2
+                </div>
+                <p class="remove">X</p>
+
+            </li>
+            <li class="flex">
+                <div>
+                    Cake 3
+                </div>
+                <p class="remove">X</p>
+
+            </li>
+            <li class="flex">
+                <div>
+                    Cake4
+                </div>
+                <p class="remove">X</p>
+
+            </li>
+            <li class="flex">
+                <div>
+                    Cake 5
+                </div>
+                <p class="remove">X</p>
+
+            </li>
+        </ul>
+
+        <ul class="down">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+        </ul>
+    </div>
+
+    <div>
+        <img alt="" src="assets/images/auth-cover-bg.jpg" class="imgSet" id="imgSet">
+        <button onclick="imageChange()">Change</button>
+    </div>
+    <form action="" name="feedback">
+        <div>
+            <input type="button" value="">
+        </div>
+    </form>
+    <form action="" name="feedback1"></form>
+    <form action="" name="feedback2"></form>
+    <form action="" name="feedback3"></form>
+
+</body>
+<script>
+    const element = document.getElementById('element');
+    const remove = document.querySelectorAll('.remove');
+    const imgSet = document.getElementById('imgSet');
+
+
+    // document.addEventListener('click', function (e) {
+    //     // Create a new div element
+    //     const circle = document.createElement('div');
+
+    //     circle.style.cssText = `
+    //     border: 1px solid red;
+    //     background-color: red;
+    //     width: 50px;
+    //     height: 50px;
+    //     border-radius: 20px;
+    //     position: absolute;
+    //     left: ${e.clientX - 25}px; /* Adjust position based on circle width */
+    //     top: ${e.clientY - 25}px; /* Adjust position based on circle height */
+    // `;
+
+    //     // Append the circle to the body
+    //     document.body.appendChild(circle);
+    // });
+
+    const formEl = document.forms;
+
+    console.log(formEl);
+    const arrayForm = [...formEl];
+    console.log(arrayForm);
+    arrayForm.map(data => {
+        console.log(data[0])
+    })
+    const imgeChange = ["nouser", "side_image", "NexxusLogo"];
+
+    function imageChange() {
+        imgSet.setAttribute('src', 'assets/images/side_image.png')
+    }
+    // for (let imageConvert of imgeChange) {
+    //     imgSet.setAttribute('src', `assets/images/${imageConvert}.jpg || assets/images/${imageConvert}.png `)
+    // }
+    // setInterval(() => {
+
+    // }, 5000)
+
+    // for (let imageConvert of imgeChange) {
+    //     console.log(imageConvert);
+    //     let jpgPath = `assets/images/${imageConvert}.jpg`;
+    //     let pngPath = `assets/images/${imageConvert}.png`;
+
+
+    //     imgSet.onerror = function () {
+    //         this.onerror = null;
+    //         this.setAttribute('src', pngPath);
+    //     };
+    //     imgSet.setAttribute('src', jpgPath);
+    // }
+
+
+
+
+    remove.forEach(remove => {
+        remove.addEventListener('click', () => {
+            const removeEl = event.target.parentNode;
+            console.log(event.target.parentNode)
+            removeEl.remove();
+        })
+    })
+
+
+    const data = ["1D", "2D", "3D", "4D"];
+    const selectMenu = document.getElementById('selectMenu');
+
+
+
+    function changeMenu() {
+
+        data.forEach(data => {
+            const option = document.createElement('option');
+            option.value = data;
+            option.textContent = data;
+            selectMenu.appendChild(option)
+        })
+
+    }
+    changeMenu();
+
+    function dataStructure() {
+        const main = document.getElementById("main");
+
+        // Clear existing content (optional)
+        // main.innerHTML = '';
+
+        data.forEach(person => {
+            const li = document.createElement('li');
+            li.textContent = person; // Use textContent for setting text
+
+            // Append the created li element to the main element
+            main.appendChild(li);
+
+
+        });
+        for (i = 0; i < data.length; i++) {
+            main.insertAdjacentHTML('beforeend', `${data[i]} <br>`)
+        }
+
+
+        main.insertAdjacentHTML('afterend', "The End")
+        main.insertAdjacentHTML('beforebegin', "Title 2")
+        main.insertAdjacentHTML('afterbegin', "The End 2")
+    }
+
+    // Call the function to execute
+    dataStructure();
+
+</script>
+
+</html>

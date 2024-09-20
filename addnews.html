@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Announcement</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/c0b59d350f.js" crossorigin="anonymous"></script>
+    <!--Style Sheets-->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrapmultiSelect.css" />
+    <link rel="stylesheet" href="assets/css/icomoon/styles.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.dataTables.css" />
+    <!-- <link rel="stylesheet" href="assets/css/select2.min.css" /> -->
+    <link rel="stylesheet" href="assets/css/bootstrap-clockpicker.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="page-content">
+        <!-- Main sidebar -->
+        <div class="sidebar sidebar_bg sidebar-main sidebar-expand-lg">
+            <!-- Sidebar content -->
+            <div class="sidebar-content">
+                <!-- User menu -->
+                <div class="sidebar-section sidebar-user my-1 ml-2">
+                    <div class="sidebar-section-body">
+                        <div class="media align-items-center">
+                            <a href="#" class="logo_img_cont">
+                                <img src="assets/images/nexxulogo.png" class="img-fluid rounded-circle" alt="" />
+                            </a>
+
+                            <div class="media-body">
+                                <div class="app_title">Nexxus Portal Plus</div>
+                            </div>
+
+                            <div class="ml-3 align-self-start">
+                                <button type="button"
+                                        class="btn btn-outline-light-100 text-white border-transparent btn-icon rounded-pill btn-sm sidebar-control sidebar-main-resize d-none d-lg-inline-flex">
+                                    <i class="icon-transmission"></i>
+                                </button>
+
+                                <button type="button"
+                                        class="btn btn-outline-light-100 text-white border-transparent btn-icon rounded-pill btn-sm sidebar-mobile-main-toggle d-lg-none">
+                                    <i class="icon-cross2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /user menu -->
+                <!-- Main navigation -->
+                <div class="sidebar-section">
+                    <ul class="nav nav-sidebar" data-nav-type="accordion">
+
+                        <li class="nav-item-header">
+                            <div class="add_info"></div>
+                            <i class="icon-menu" title="Main"></i>
+                        </li>
+                        <li class="nav-item">
+                            <a href="userapproval.html" class="nav-link"><i class="icon-home4"></i> <span>User Approval</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="inbox.html" class="nav-link"><i class="fa-solid fa-inbox"></i><span>Inbox</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="nsrList.html" class="nav-link"><i class="icon-home4"></i> <span>New Store Request</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pcrList.html" class="nav-link">
+                                <i class="icon-home4"></i>
+                                <span>
+                                    Price Change  Request
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="newsannouncement.html" class="nav-link">
+                                <i class="icon-home4"></i>
+                                <span>
+                                    News &amp; Announcement
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="lastposteddates.html" class="nav-link"><i class="icon-home4"></i> <span>Last Post Dates</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="pricebookupload.htmk" class="nav-link"><i class="icon-home4"></i> <span>Upload PiceBook</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="zendesk.html" class="nav-link"><i class="icon-home4"></i> <span> ZenDesk/Support </span></a>
+                        </li>
+                        <li class="nav-item nav-item-submenu">
+                            <a href="#" class="nav-link"><i class="icon-copy"></i> <span>Reports</span></a>
+
+                            <ul class="nav nav-group-sub" data-submenu-title="Layouts">
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link active">Check History</a></li>
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link">Check Report_SBI</a></li>
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link">Check Summary</a></li>
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link">Check Summary For Single Retailer</a></li>
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link">Driver Shrink Adjustment</a></li>
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link">Inventory On Hand</a></li>
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link">Merchandiser Sales Report</a></li>
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link">Product List</a></li>
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link">Remittance Detail By Check Number</a></li>
+                                <li class="nav-item"><a href="checkHistory.html" class="nav-link">Retail Store List</a></li>
+                            </ul>
+                        </li>
+                        <!--//page kits-->
+                    </ul>
+
+
+                </div>
+                <!-- /main navigation -->
+            </div>
+            <!-- /sidebar content -->
+        </div>
+        <!-- /main sidebar -->
+        <!-- Main content -->
+        <div class="content-wrapper">
+            <!-- Inner content -->
+            <div class="content-inner">
+                <!-- Page header -->
+                <div class="page-header page-header-light d-flex align-items-baseline justify-content-between">
+                    <div class="breadcrumb-line breadcrumb-line-light header-elements-lg-inline">
+                        <div class="d-flex">
+                            <div class="breadcrumb">
+                                <a href="user.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+                                <span class="breadcrumb-item active">New Announcement</span>
+                            </div>
+
+                            <a href="#" class="header-elements-toggle text-body d-lg-none"><i class="icon-more"></i></a>
+                        </div>
+                    </div>
+                    <div class="page-header-content header-elements-lg-inline">
+                        <div class="header-elements d-none">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="dropdown">
+                                    <a href="#" class="btn btn-link btn-float text-body text-decoration-none" id="notificationDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <span class="position-relative notificationBtn">
+                                            <i class="fas fa-bell mr-3"></i>
+                                            <span class="round_alert"></span>
+                                        </span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdownWidth" aria-labelledby="notificationDropdown">
+                                        <li class="px-3">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <p class="mb-0">Notifications</p>
+                                                <div>
+                                                    <a href="#" class="btn btn-sm btn-link">View All</a>
+                                                    <a href="#" class="btn btn-sm btn-link">Dismiss All</a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li class="list-group-item">
+                                            <div class="ms-3 me-auto d-flex justify-content-between align-items-start">
+                                                <p class="notificationPara">Automatically accepted 39 steps similar to step 1/4 of 'Test primary page' <span class="text-primary">see details</span></p>
+                                                <div><i class="fa fa-times paddingRight" aria-hidden="true"></i></div>
+                                            </div>
+                                            <div class="text-end">
+                                                <p class="mb-0 paddingRight">an hour ago</p>
+                                            </div>
+                                        </li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li class="list-group-item">
+                                            <div class="ms-3 me-auto d-flex justify-content-between align-items-start">
+                                                <p class="notificationPara">Automatically accepted 39 steps similar to step 1/4 of 'Test primary page' <span class="text-primary">see details</span></p>
+                                                <div><i class="fa fa-times paddingRight" aria-hidden="true"></i></div>
+                                            </div>
+                                            <div class="text-end">
+                                                <p class="mb-0 paddingRight">an hour ago</p>
+                                            </div>
+                                        </li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li class="list-group-item">
+                                            <div class="ms-3 me-auto d-flex justify-content-between align-items-start">
+                                                <p class="notificationPara">Automatically accepted 39 steps similar to step 1/4 of 'Test primary page' <span class="text-primary">see details</span></p>
+                                                <div><i class="fa fa-times paddingRight" aria-hidden="true"></i></div>
+                                            </div>
+                                            <div class="text-end">
+                                                <p class="mb-0 paddingRight">an hour ago</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn btn-link btn-float text-body text-decoration-none">
+                                    <span>
+                                        <i class="fa fa-question-circle-o mr-3" aria-hidden="true"></i>
+                                    </span>
+                                </a>
+
+                                <div class="dropdown top_drop">
+                                    <a href="#" class="btn btn-link btn-float text-body dropdown-toggle">
+                                        <div class="d-flex align-items-center">
+                                            <div class="flex-shrink-0">
+                                                <div class="thum_img">
+                                                    <img class="img-fluid" src="assets/images/nouser.jpg" />
+                                                </div>
+                                            </div>
+                                            <div class="flex-grow-1 ml-2">
+                                                <div class="admin_info text-left">
+                                                    <p>Admin</p>
+                                                    <h6>DK</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li>
+                                            <div class="dropdown-item d-flex align-items-center">
+                                                <div class="flex-shrink-0">
+                                                    <div class="thum_img">
+                                                        <img class="img-fluid" src="assets/images/nouser.jpg" />
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 ml-2">
+                                                    <div class="admin_info text-left">
+                                                        <h6>DK</h6>
+                                                        <p>form1224@gmail.com</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"><span><i class="icon-user mr-2"></i></span>Profile</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"><span><i class="icon-cog3 mr-2"></i></span>Settings</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"><span><i class="icon-compass4 mr-2"></i></span>Activity Log</a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="./loginpage.html">
+                                                <span>
+                                                    <i class="icon-switch mr-2"></i>
+                                                </span>Logout
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /page header -->
+                <!-- Content area -->
+                <div class="content bg-white dashboard_parent">
+                    <div class="row row-xs">
+                        <div class="col-md-12">
+                            <div class="title_page">
+                                <h3>New Announcement</h3>
+                                <p>View News and Announcements list</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Main Table -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div>
+
+                                <div class="container-fluid mt-4">
+                                    <div class="accordion" id="accordionExample">
+
+                                        <div class="card1">
+                                            <div id="collapseOne" class="collapse show" data-bs-parent="#accordionExample">
+                                                <div class="row">
+
+                                                    <div class="row">
+                                                        <div class="row mb-5">
+                                                            <!--<div class="col-md-3">
+                                                                            <div>
+                                                                    <label for="state" class="ms-1">User Approval</label>
+                                                                    <select class="form-select" id="state">
+                                                                        <option value="Create">Pending User</option>
+                                                                        <option value="Update">Approval User</option>
+                                                                        <option value="Edit">Rejected User</option>
+
+                                                                    </select>
+                                                                </div>
+                                                            </div>-->
+                                                            <div class="col-md-9">
+                                                                <div>
+                                                                    <label for="state" class=" ms-1">Title :</label>
+                                                                    <input type="text" class="form-control" placeholder="" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="row my-3">
+                                                                    <div class="col-md-3">
+                                                                        <label for="effectiveDate" class="form-label">Visible From:</label>
+                                                                        <input type="text" id="effectiveDate" class="form-control">
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <label for="effectiveDate" class="form-label">Visible To:</label>
+                                                                        <input type="text" id="effectiveDate1" class="form-control">
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <div>
+                                                                            <label for="state" class=" ms-1">Created by :</label>
+                                                                            <input type="text" class="form-control" placeholder="" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-12">
+                                                                <div class="row my-6">
+                                                                    <!-- <div class="col-md-3 ">
+                                                                        <p class="mb-0 d-flex justify-content-end align-items-end h-100 ">Share With :</p>
+                                                                    </div> -->
+                                                                    <div class="col-md-3 d-flex align-items-end">
+                                                                        <div class="form-check d-flex align-items-center">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="yes1">
+                                                                            <label class="form-check-label ms-1" for="yes1">
+                                                                                Show to all users (no filter)
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3 d-flex align-items-end">
+                                                                        <div class="form-check d-flex align-items-center">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="no1">
+                                                                            <label class="form-check-label me-3" for="no1">
+                                                                                Filter who will see the news item
+
+                                                                            </label>
+                                                                           
+                                                                        </div>
+                                                                        <!-- <div>
+                                                                            <select class="form-select" id="addNews1" multiple="multiple">
+                                                                                <option value="Create">All</option>
+                                                                                <option value="Create">Create</option>
+                                                                                <option value="Update">Update</option>
+                                                                                <option value="Edit">Edit</option>
+                                                                                <option value="Delete">Delete</option>
+                                                                            </select>
+                                                                        </div> -->
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <div>
+                                                                            <select class="form-select" id="addNews1" multiple="multiple">
+                                                                                <option value="Create">All</option>
+                                                                                <option value="Create">User 1</option>
+                                                                                <option value="Update">User 2</option>
+                                                                                <option value="Edit">User 3</option>
+                                                                               
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="row my-3">
+                                                                    <div class="row">
+                                                                        <label>Description</label>
+                                                                        <textarea cols="12" rows="8">Testing Comments............</textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="d-flex justify-content-end">
+                                                            <button type="reset" class="btn btn-white done">
+                                                                Cancel
+                                                            </button>
+                                                            <button type="submit" class="btn btn-primary ml-2 " id="sweet_success">
+                                                                Publish
+                                                            </button>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <!--<div class="btnNext">
+                                                    <button class="btn  next" data-next="collapseTwo">Next</button>
+                                                </div>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- /main Table -->
+                    <!-- /main Table -->
+                </div>
+                <!-- /content area -->
+                <!-- Footer -->
+                <div class="navbar navbar-expand-lg navbar-light border-bottom-0 border-top">
+                    <div class="text-center d-lg-none w-100">
+                        <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse"
+                                data-target="#navbar-footer">
+                            <i class="icon-unfold mr-2"></i>
+                            Footer
+                        </button>
+                    </div>
+
+                    <div class="navbar-collapse collapse" id="navbar-footer">
+                        <span class="navbar-text">
+                            Copyright &copy; 2024 Nexxus Group&reg;. All Rights Reserved
+
+                        </span>
+
+                        <!-- <ul class="navbar-nav ml-lg-auto">
+                                        <li class="nav-item"><a href="https://kopyov.ticksy.com/" class="navbar-nav-link" target="_blank"><i class="icon-lifebuoy mr-2"></i> Support</a></li>
+                                        <li class="nav-item"><a href="https://demo.interface.club/limitless/docs/" class="navbar-nav-link" target="_blank"><i class="icon-file-text2 mr-2"></i> Docs</a></li>
+                                        <li class="nav-item"><a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link font-weight-semibold"><span class="text-pink"><i class="icon-cart2 mr-2"></i> Purchase</span></a></li>
+                                    </ul> -->
+                    </div>
+                </div>
+                <!-- /footer -->
+            </div>
+            <!-- /inner content -->
+        </div>
+        <!-- /main content -->
+        <!-- Sidepanel content-->
+        <div id="modal_popup1" class="modal fade modal-right modal_classes" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog modal_store modal-dialog-slideout">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="mb-0">Attendence Status</h6>
+                        <div>
+                            <!-- <span class="fa_expand" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Expand Screen"><i class="fa-light fa-expand"></i></span> -->
+                            <button type="button" id="closeBox" class="close" data-bs-dismiss="modal">
+                                &times;
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+                        <!-- Form -->
+                        <form autocomplete="off">
+                            <div>
+                                <div class="row mb-3 g-3 align-items-center">
+                                    <div class="col-4">
+                                        <label for="firstName" class="col-form-label"></label>
+                                        Name :
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" id="firstName" class="form-control" />
+                                    </div>
+                                </div>
+
+
+                                <div class="row mb-3 g-3 align-items-center">
+                                    <div class="col-4">
+                                        <label for="email1" class="col-form-label">Email :</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="email" id="email1" class="form-control" />
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3 g-3 align-items-center">
+                                    <label class="custom-control custom-switch custom-control-right">
+                                        <input type="checkbox" class="custom-control-input" checked />
+                                        <span class="custom-control-label">Active :</span>
+                                    </label>
+
+                                </div>
+
+
+
+                                <div class="row mb-3 g-3 align-items-center">
+                                    <div class="col-4">
+                                        <label for="effectFrom" class="col-form-label">Effective Form :</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" id="effectFrom" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row mb-3 g-3 align-items-center">
+                                    <div class="col-4">
+                                        <label for="effectTo" class="col-form-label">Effective To :</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" id="effectTo" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row mb-3 g-3 align-items-center">
+                                    <div class="col-4">
+                                        <label for="role" class="col-form-label">Assign Role :</label>
+                                    </div>
+                                    <div class="col-8">
+                                        <input type="text" id="role" class="form-control" />
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </form>
+                        <!-- Form -->
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="reset" class="btn  done closeBoxDialog" id="closeBoxDialog">
+                            Cancel
+                        </button>
+                        <button type="submit" class="btn btn-primary ml-2 " id="sweet_success">
+                            Save
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Sidepanel content-->
+    </div>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap_multiselect.js"></script>
+    <script src="assets/js/form_multiselect.js"></script>
+    <script src="assets/js/datatables.min.js"></script>
+    <script src="assets/js/datatables_advanced.js"></script>
+    <script src="https://cdn.datatables.net/fixedcolumns/4.1.0/js/dataTables.fixedColumns.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/daterangepicker.js"></script>
+    <script src="assets/js/pickadate/picker.js"></script>
+    <script src="assets/js/pickadate/picker.date.js"></script>
+    <script src="assets/js/new.js"></script>
+    <!-- <script src="assets/js/customertable.js"></script> -->
+
+    <script src="assets/js/bootstrap-clockpicker.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            const stepButtons = document.querySelectorAll('.step-button');
+            const progress = document.querySelector('#progress');
+
+            Array.from(stepButtons).forEach((button, index) => {
+                button.addEventListener('click', () => {
+                    progress.setAttribute('value', index * 100 / (stepButtons.length - 1));//there are 3 buttons. 2 spaces.
+
+                    stepButtons.forEach((item, secindex) => {
+                        if (index > secindex) {
+                            item.classList.add('done');
+                        }
+                        if (index < secindex) {
+                            item.classList.remove('done');
+                        }
+                    })
+                })
+            })
+
+
+            $('.multiselect-select-all-filtering').multiselect({
+                includeSelectAllOption: true,
+                enableFiltering: true,
+                enableCaseInsensitiveFiltering: true
+            });
+            $('.multiselect').click(function () {
+                $('.multiselect-container').slideUp(600);
+                if (!$(this).next('.multiselect-container').is(':visible')) {
+                    $(this).next('.multiselect-container').slideDown(600);
+                } else {
+                    $(this).next('.multiselect-container').slideUp(600);
+                }
+                console.log('wolimg')
+            });
+            $('#announcement').multiselect({
+                selectAllValue: 'multiselect-all',
+                enableCaseInsensitiveFiltering: true,
+                enableFiltering: true,
+                maxHeight: '300',
+                buttonWidth: '235',
+                numberDisplayed: 2,
+                nonSelectedText: 'Please Select',
+            });
+
+
+            $('.next').click(function () {
+                var nextId = $(this).data('next');
+                $('#' + nextId).collapse('show');
+                updateProgressBar();
+            });
+
+            $('.previous').click(function () {
+                var previousId = $(this).data('previous');
+                $('#' + previousId).collapse('show');
+                updateProgressBar();
+            });
+
+            $('.steps .step-button').on('click', function () {
+                updateProgressBar();
+            });
+
+            $('#addNews1').multiselect(
+                {
+                    enableFiltering: true,
+                    enableCaseInsensitiveFiltering: true,
+                    buttonWidth: '100%',
+                    
+                    buttonClass: "custom-select custom1",
+                }
+            );
+            $('#state').multiselect(
+                {
+                    enableFiltering: true,
+                    enableCaseInsensitiveFiltering: true,
+                    buttonWidth: '100%',
+                    buttonClass: "custom-select custom1",
+                }
+            );
+            $('#city').multiselect(
+                {
+                    enableFiltering: true,
+                    enableCaseInsensitiveFiltering: true,
+                    buttonWidth: '100%',
+                    buttonClass: "custom-select custom1",
+                }
+            );
+            $('#zipCode').multiselect(
+                {
+                    enableFiltering: true,
+                    enableCaseInsensitiveFiltering: true,
+                    buttonWidth: '100%',
+                    buttonClass: "custom-select custom1",
+                }
+            );
+            $('#storeList').multiselect(
+                {
+                    enableFiltering: true,
+                    enableCaseInsensitiveFiltering: true,
+                    buttonWidth: '100%',
+                    buttonClass: "custom-select custom1",
+                }
+            );
+
+            $("#screenSelect").multiselect({
+
+                enableFiltering: true,
+                enableCaseInsensitiveFiltering: true,
+                buttonWidth: '100%',
+                buttonClass: "custom-select custom1",
+
+            });
+            $('.multiselect').click(function () {
+                $('.multiselect-container').slideUp(600);
+                if (!$(this).next('.multiselect-container').is(':visible')) {
+                    $(this).next('.multiselect-container').slideDown(100);
+                } else {
+                    $(this).next('.multiselect-container').slideUp(100);
+                }
+                console.log('wolimg')
+            });
+            $("#effectiveDate").datepicker({
+                dateFormat: "dd-mm-yy",
+            });
+            $("#effectiveDate1").datepicker({
+                dateFormat: "dd-mm-yy",
+            });
+
+
+            $("#announcement").multiselect({
+
+                enableFiltering: true,
+                enableCaseInsensitiveFiltering: true,
+                buttonWidth: '100%',
+                buttonClass: "custom-select custom1",
+
+            });
+            // $('.multiselect').click(function () {
+            //     $('.multiselect-container').slideUp(600);
+            //     if (!$(this).next('.multiselect-container').is(':visible')) {
+            //         $(this).next('.multiselect-container').slideDown(100);
+            //     } else {
+            //         $(this).next('.multiselect-container').slideUp(100);
+            //     }
+            //     console.log('wolimg')
+            // });
+            //document.querySelectorAll('.nav-item').forEach(item => {
+            //    item.addEventListener('click', function () {
+            //        document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+            //        this.classList.add('active');
+            //    });
+            //});
+        });
+
+    </script>
+</body>
+
+</html>

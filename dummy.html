@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown with Checkbox DataTable</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        .selected-values {
+            margin-top: 20px;
+        }
+
+        .selected-values table {
+            width: 100%;
+        }
+
+        .selected-values th,
+        .selected-values td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Dropdown with Checkbox DataTable Example</h3>
+                <select id="dropdown" class="form-control">
+                    <option value="">Select an option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                <table id="example" class="display mt-3" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Select</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" value="1"></td>
+                            <td>Product 1</td>
+                            <td>Description 1</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" value="2"></td>
+                            <td>Product 2</td>
+                            <td>Description 2</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" value="3"></td>
+                            <td>Product 3</td>
+                            <td>Description 3</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" value="3"></td>
+                            <td>Product 2</td>
+                            <td>Description 3</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" value="3"></td>
+                            <td>Product 1</td>
+                            <td>Description 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row selected-values">
+            <div class="col-md-12">
+                <h4>Selected Values</h4>
+                <table id="selectedValuesTable" class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Selected Name</th>
+                            <th>Selected Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Selected values will be appended here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var table = $('#example').DataTable({
+                paging: false,
+                searching: false,
+                info: false
+            });
+
+            $('#dropdown').change(function () {
+                var selectedOption = $(this).val();
+                if (selectedOption) {
+                    $('#selectedValuesTable tbody').empty(); // Clear previous selections
+                    // Filter checked rows
+                    var checkedRows = table.rows().nodes().filter(function (node) {
+                        return $(node).find('input[type="checkbox"]').prop('checked');
+                    });
+                    // Populate selected values table
+                    $(checkedRows).each(function () {
+                        var rowData = table.row(this).data();
+                        $('#selectedValuesTable tbody').append('<tr><td>' + rowData[1] + '</td><td>' + rowData[2] + '</td></tr>');
+                    });
+                } else {
+                    $('#selectedValuesTable tbody').empty(); // Clear table if no option selected
+                }
+            });
+
+            // Handle checkbox click event
+            $('#example tbody').on('change', 'input[type="checkbox"]', function () {
+                var isChecked = $(this).prop('checked');
+                var rowData = table.row($(this).closest('tr')).data();
+                if (isChecked) {
+                    $('#selectedValuesTable tbody').append('<tr><td>' + rowData[1] + '</td><td>' + rowData[2] + '</td></tr>');
+                } else {
+                    $('#selectedValuesTable tbody').find('td:contains(' + rowData[1] + ')').closest('tr').remove();
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
